@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/fondo-dragon.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Cubre toda la ventana */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    margin: 0; /* Quitar margen por defecto */
+    padding: 20px; /* Espaciado interno */
+    color: #333; /* Cambia el color del texto para mejor contraste */
+}
+
+.logo {
+    max-width: 100%; /* Asegurarse de que el logo no exceda el ancho de la página */
+    height: auto; /* Mantener la relación de aspecto */
+}
+
+h1, h2 {
+    color: #d8d8d8;
+    text-align: center;
+}
+
+h3 {
+    color: aliceblue;
+}
+
+form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+#video-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacio entre los elementos */
+    margin-top: 20px;
+}
+
+.video-item {
+    background: #020202;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Colocar elementos en columna */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+}
+
+.video-item video {
+    max-width: 100%; /* Ajustar el video al ancho del contenedor */
+    height: auto; /* Mantener la relación de aspecto */
+}
+
+
+.video-item h3 {
+    text-align: center;
+    color: #ffffff;
+}
+
+#file-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacio entre los elementos */
+    margin-top: 20px;
+}
+
+.file-item {
+    background: #020202;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Colocar elementos en columna */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+}
+
+.file-item img {
+    max-width: 100%; /* Asegúrate de que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantener la relación de aspecto */
+}
+
+header {
+    background-color: #000000; /* Color de fondo para la banda */
+    padding: 10px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centrar el contenido */
+}
+
+.logo {
+    max-width: 20%; /* Asegurarse de que el logo no exceda el ancho de la página */
+    height: auto; /* Mantener la relación de aspecto */
+}
+
+.options {
+    display: flex;
+    justify-content: center; /* Centrar los botones */
+    gap: 20px; /* Espacio entre los botones */
+    margin-top: 30px; /* Espacio superior */
+}
+
+.option {
+    display: inline-block; /* Hacer que los enlaces se comporten como bloques */
+    background-color: #313131; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 15px 30px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; /* Tamaño de fuente */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.option:hover {
+    background-color: #0056b3; /* Color al pasar el ratón */
+}
